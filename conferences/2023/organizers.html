@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>2023 Inter-Change | TEDxKeioU</title>
+    <link rel="stylesheet" href="/event.css">
+    <!-- jQuery.jsの読み込み -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    //共通パーツ読み込み
+    $(function() {
+        $("#header").load("/header.html");
+        $("#event-header").load("/event-header.html");
+        $("#footer").load("footer.html");
+    });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="event-header"></div>
+
+    <div class="fadein">
+        <div class="label-title">
+            <h1>
+                Organizers
+            </h1>
+        </div>
+        <div class="preparation-announcement">
+            <div class="demo-content">
+                オーガナイザー公開まで、もうしばらくお待ちください<br>
+                Organizers will be announced soon
+            </div>
+            <div class="demo-boxes">
+                <div class="demo-gray-rectangle"></div>
+                <div class="demo-gray-rectangle"></div>
+                <div class="demo-gray-rectangle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>

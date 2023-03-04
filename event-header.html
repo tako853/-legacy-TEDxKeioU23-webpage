@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/event-header.css">
+        <title>event-header</title>
+    </head>
+    <script>
+        //カレント表示
+        const headerNavLink = document.querySelectorAll('.event-nav-link');
+
+        headerNavLink.forEach((targetLink) => {
+        if (targetLink.href === location.href) {
+            targetLink.classList.add('is-current');
+            console.log('well done!');
+        }
+        });
+    </script>
+    <body>
+    <!-- header -->
+        <div class="event-nav-list">
+            <div class="event-nav-list-title">
+                <div>
+                    2023 Inter-Change
+                </div>
+            </div>
+            <div class="event-nav-itemwrapper">
+                <a class="event-nav-link" href="/conferences/2023/">
+                    <div class="event-nav-list-item">
+                        About
+                    </div>
+                </a>
+                <a class="event-nav-link" href="/conferences/2023/speakers.html">
+                    <div class="event-nav-list-item">
+                        Speakers
+                    </div>
+                </a>
+                <a class="event-nav-link" href="/conferences/2023/partners.html">
+                    <div class="event-nav-list-item">
+                        Partners
+                    </div>
+                </a>
+                <a class="event-nav-link" href="/conferences/2023/organizers.html">
+                    <div class="event-nav-list-item">
+                        Organizers
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

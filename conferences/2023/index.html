@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>2023 Inter-Change | TEDxKeioU</title>
+    <link rel="stylesheet" href="/toppage.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><!-- jQuery.jsの読み込み -->
+    <script>
+        //共通パーツ読み込み
+        $(function() {
+            $("#header").load("/header.html");
+            $("#event-header").load("/event-header.html");
+            $("#loading").load("/load.html");// load.jsも必ず読み込むこと、loading要素を追加すること
+            $("#footer").load("/footer.html");
+        });
+    </script>
+    <!--スクロールしたらタイトルが下がってサブタイトルが消える実装
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 10) {
+                $('.event-title').css({'color':'#f1f1f1'});
+                $('.event-thmbnail-subtitle').css({'opacity':'0','transition':'all 0.3s ease'});
+            }else {
+                $('.event-title').css({'-webkit-text-stroke':'unset','color':'#fff'});
+                $('.event-thmbnail-subtitle').css({'opacity':'1'});
+            }
+        });
+    </script>
+    -->
+</head>
+<body>
+    <div id="loading"></div>
+
+    <div id="header"></div>
+    <div id="event-header"></div>
+
+    <div class="event-thmbnail">
+        <div class="event-is-layer-dot">
+            <video src="/img/inter-change-video2.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="event-title">
+            Inter-Change
+        </div>
+        <div class="event-thmbnail-subtitle">
+            2023 Conference
+        </div>
+    </div>
+    <div class="event-content-wrapper">
+        <div class="aboutevent">
+            <div class="aboutevent-title">
+                Abstract
+            </div>
+            <p>
+                コロナ禍のトンネルを抜け、目の前に広がるのは、数年前のような日常ではなく、様々な制限や流動により変わった新しい景色。
+                対面での関わりが最低限に抑えられたリモートワークや店内でマスクを外すタイミングに戸惑う食事、世代やシチュエーションにおいて、混迷が残る。
+                中でも学生は、就職活動や授業の形態など多くの変動に対応してきたが、コロナ禍でさらに展開された進路や自分の「やりたいこと」の本質についての悩みを抱えたまま社会へと押し出されている。<br><br>
+                今年のTEDxKeioUのテーマ「Inter-Change」。<br>
+                新たな場所への行き方を切り開く道、現在地からゴールへの架け橋となる道、目標や夢を現実にする線引きをとなる道。その道を通るのは多種多様な価値観や想いを持った人々。様々な道や人が行き交うことを意味したテーマを掲げ、どのような道をどのように歩めば良いか迷う人に、私たちTEDxKeioUは手を差し伸べる。<br><br>
+                このイベントの参加者はきっと、自身の将来や考えに少しでも自信を持ち、会場を後にすることだろう。そして、未来に現れた道を進む参加者の足取りは、より軽やかに、希望に満ちたものになると、運営委員一同胸を張って約束します。
+            </p>
+        </div>
+        <div class="aboutevent">
+            <h2>
+                開催日
+            </h2>
+            <p>
+                2023年6月18日
+            </p>
+            <h2>
+                会場
+            </h2>
+            <p>
+                慶應義塾大学三田キャンパス 南館ディスタンスラーニング室
+            </p>
+            <h2>
+                参加方法
+            </h2>
+            <p>
+                チケットの購入案内等につきましては、後日発表いたします
+            </p>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>

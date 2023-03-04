@@ -39,19 +39,21 @@ a{
 }
 .top-thmbnail-titlecontainer{
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     right: 30px;
     text-align: right;
     color: #ffffff;
     margin-left: 30px;
 }
-.top-thmbnail-titlecontainer h2{
-    font-size: min(5vw,30px);
-}
 .top-thmbnail-titlecontainer h1{
     font-size: min(15vw,100px);
     font-family: 'Libre Baskerville', serif;
 }
+.top-thmbnail-titlecontainer h2{
+    font-size: min(5vw,30px);
+    margin-top: 20px;
+}
+
 
 .news-column-wrapper{
     display: flex;

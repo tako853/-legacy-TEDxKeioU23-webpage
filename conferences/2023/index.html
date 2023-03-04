@@ -29,6 +29,19 @@
         });
     </script>
     -->
+    <script>
+        //フェードイン
+        $(window).scroll(function (){
+            $('.fadein').each(function(){
+                var elemPos = $(this).offset().top,
+                scroll = $(window).scrollTop(),
+                windowHeight = $(window).height();
+                    if (scroll > elemPos - windowHeight + 150){
+                        $(this).addClass('scrollin');
+                    }
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="loading"></div>
@@ -37,17 +50,23 @@
     <div id="event-header"></div>
 
     <div class="event-thmbnail">
+        <div class="scrolldown">
+            <a href="#">Scroll</a>
+        </div>
         <div class="event-is-layer-dot">
             <video src="/img/inter-change-video2.mp4" autoplay loop muted playsinline></video>
         </div>
         <div class="event-title">
             Inter-Change
         </div>
+        <!--
         <div class="event-thmbnail-subtitle">
             2023 Conference
         </div>
+        -->
+        
     </div>
-    <div class="event-content-wrapper">
+    <div class="event-content-wrapper fadein">
         <div class="aboutevent">
             <div class="aboutevent-title">
                 Abstract

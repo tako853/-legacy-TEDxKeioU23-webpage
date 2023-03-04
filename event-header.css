@@ -32,7 +32,12 @@ body{
   display: flex;
 }
 .event-nav-list-item{
-  margin: 20px 60px 20px 60px;
+  height: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 25vw;
+  max-width: 150px;
 }
 .event-nav-link{
   transition: all 0.3s ease;
@@ -42,14 +47,21 @@ body{
   transition: all 0.3s ease;
 } 
 .event-nav-link:hover > .event-nav-list-item{
-  padding-bottom: 5px;
-  border-bottom: rgb(255, 255, 255,0.3) 2px solid;
+  border-bottom: rgb(255, 255, 255,0.3) 5px solid;
 }
 
 /*カレント表示*/
 .is-current{
 }
 .is-current > .event-nav-list-item{
-  padding-bottom: 5px;
-  border-bottom: #EB0028 2px solid;
+  border-bottom: #EB0028 5px solid;
+}
+
+@media screen and (max-width:600px){
+  .event-nav-link{
+    font-size: 3vw;
+  }
+  .event-nav-list-item{
+
+  }
 }

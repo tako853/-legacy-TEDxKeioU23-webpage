@@ -16,4 +16,4 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           LOCAL_DIR: ./
-          REMOTE_DIR: /public_html/tedxkeio.com/test
+          REMOTE_DIR: /public_html/tedxkeiou.com/test

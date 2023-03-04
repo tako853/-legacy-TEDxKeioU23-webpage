@@ -4,6 +4,11 @@
 body{
   font-family: 'Montserrat', sans-serif; 
 }
+#event-header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
 .event-nav-list{
   width: 100%;
@@ -65,3 +70,4 @@ body{
   .event-nav-list-item{
   }
 }
+

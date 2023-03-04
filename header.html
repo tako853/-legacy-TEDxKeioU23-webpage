@@ -60,6 +60,11 @@
         * {
             margin:0; padding:0;
         }
+        #header{
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
         img{
             /*heightは属性で直接指定済*/
             float: left;
@@ -108,6 +113,9 @@
         @media screen and (max-width: 600px) {
             .nav-list{
                 display: none;
+            }
+            img{
+                margin-left: 10px;
             }
         }
     </style>

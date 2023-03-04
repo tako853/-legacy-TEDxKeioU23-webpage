@@ -5,12 +5,11 @@ footer{
   background-color: #1B2128;
   color: white;
   */
-  background-color: #fff;
   color: #000;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 50px;
-
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: small;
 }
 ul.footer-menu li {
   display: inline;

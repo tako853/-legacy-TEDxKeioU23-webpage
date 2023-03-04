@@ -18,13 +18,14 @@ a{
 
 .is-layer-dot {
     position: relative;
+    height: 500px;
 }
 .is-layer-dot::after {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - 4px);
+    height: 100%;
     content: "";
     display: block;
     background-color: rgba(120, 120, 120, 0.3);
@@ -36,28 +37,30 @@ a{
 
 .top-thmbnail{
     position: relative;
-    margin-left: 100px;
+    margin-left: 10vw;
     max-height: 70vh;
     overflow: hidden;
     border-radius: 30px 0 0 30px;
 }
 .top-thmbnail video{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.top-thmbnail-subtitle{
-    position: absolute;
-    bottom:120px;
-    left: 100px;
-    color: #ffffff;
-    font-size: 30px;
-}
-.top-thmbnail-title{
+.top-thmbnail-titlecontainer{
     position: absolute;
     bottom: 10px;
-    left:100px;
-    font-size: 100px;
-    font-family: 'Libre Baskerville', serif;
+    right: 30px;
+    text-align: right;
     color: #ffffff;
+    margin-left: 30px;
+}
+.top-thmbnail-titlecontainer h2{
+    font-size: min(5vw,30px);
+}
+.top-thmbnail-titlecontainer h1{
+    font-size: min(15vw,100px);
+    font-family: 'Libre Baskerville', serif;
 }
 
 .news-column-wrapper{
@@ -113,27 +116,32 @@ a{
 }
 
 .map-column{
-    height: 500px;
+    height: 600px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.map-content{
-    margin-right: 10px;
-    width: 500px;
+.map-content-container{
+    margin: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30vw;
+    justify-content: start;
 }
-.map-content h1{
+.map-content-container h1{
     font-family: 'Libre Baskerville', serif;
 }
+.map-content{
+    margin: 20px;
+}
+
 .map-embed{
     height:500px; 
-    border-radius: 30px;
+    border-radius: 0 30px 30px 0 ;
     overflow: hidden;
-    width: 100%;
+    width: 70vw;
 }
 
 .contact{
@@ -267,71 +275,41 @@ a{
 }
 
 
-/*イベントページcss*/
-.event-thmbnail video{
-    min-height: 100vh;
-    min-width: 100vw;
-    height: 100%;
-}
-.event-thmbnail{
-    height: calc(100vh - (80px + 124px));
-    overflow: hidden;
-}
-.event-title{
-    position: absolute;
-    bottom: 180px;
-    right: 20px;
-    font-size: 100px;
-    font-family: 'Libre Baskerville', serif;
-    color: #fff;
-    text-align: right;
-}
-.event-thmbnail-subtitle{
-    position: absolute;
-    bottom:120px;
-    right: 30px;
-    color: #ffffff;
-    font-size: 30px;
-    transition: all 1s ease;
-}
 
-
-.aboutevent{
-    margin-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.aboutevent-title{
-    font-family: 'Libre Baskerville', serif;
-    font-weight: bolder;
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.aboutevent p{
-    margin-bottom: 10px;
-}
-.event-content-wrapper{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-}
-
-.event-is-layer-dot {
-    position: relative;
-}
-.event-is-layer-dot::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 4px);
-    content: "";
-    display: block;
-    background-color: rgba(120, 120, 120, 0.3);
-    background-image: radial-gradient(#000000 20%, transparent 0), radial-gradient(#000 20%, transparent 0);
-    background-position: 0 0, 10px 10px;
-    background-size: 5px 5px;
+@media screen and (max-width:1000px) {
+    .about-innerwrapper{
+        flex-direction: column;
+        width: 90vw;
+    }
+    .about-innerwrapper h1{
+        font-size: min(10vw,50px);
+    }
+    .about-innerwrapper p{
+        margin-top: 50px;
+    }
+    .about-innerwrapper img{
+        max-width: 400px;
+        width: 80vw;
+        margin: 0;
+    }
+    .map-column{
+        flex-direction: column;
+        border-radius: initial;
+        margin: 0;
+    }
+    .map-content-container{
+        display: inline;
+        text-align: left;
+        width: 100%;
+    }
+    .map-content-inner{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .map-embed{
+        height:500px;
+        width: calc(100% - 5vw);
+        margin-right: 5vw;
+    }
 }

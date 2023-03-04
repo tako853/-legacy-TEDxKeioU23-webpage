@@ -57,9 +57,10 @@ body{
   border-bottom: #EB0028 5px solid;
 }
 
+/*レスポンシブ*/
 @media screen and (max-width:600px){
   .event-nav-link{
-    font-size: 4vw;
+    font-size:min(4vw,16px);
   }
   .event-nav-list-item{
   }

@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/header.css">
     <title>header</title>
-        <!--google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
-        <script>
-            //カレント表示
-            const headerNavLink = document.querySelectorAll('.nav-link');
-    
-            headerNavLink.forEach((targetLink) => {
-            if (targetLink.href === location.href) {
-                targetLink.classList.add('header-is-current');
-                console.log('well done!');
-            }else if (targetLink.href.includes('conferences') && location.href.includes('conferences')) {
-                targetLink.classList.add('header-is-current');
-                console.log('well done!');
-            }
-            });
-        </script>
+    <script src="/header.js"></script>
+    <script>
+        //カレント表示
+        const headerNavLink = document.querySelectorAll('.nav-link');
+
+        headerNavLink.forEach((targetLink) => {
+        if (targetLink.href === location.href) {
+            targetLink.classList.add('header-is-current');
+            console.log('well done!');
+        }else if (targetLink.href.includes('conferences') && location.href.includes('conferences')) {
+            targetLink.classList.add('header-is-current');
+            console.log('well done!');
+        }
+        });
+    </script>
     </head>
-    <body>    
+    <body>
         <header><!-- header -->
             <a href="/">
                 <img src="/img/logo-black.png" height="50" width="auto">
@@ -55,68 +57,19 @@
                 -->
             </ul>
         </header>
+        <div class="openbtn1 mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="g-nav">
+            <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                <ul>
+                    <li><a href="/" class="link">Top</a></li>  
+                    <li><a>Conferences</a></li>  
+                    <li><a href="/conferences/2023/" class="link">- 2023</a></li>  
+                </ul>
+            </div>
+        </nav>
     </body>
-    <style>
-        * {
-            margin:0; padding:0;
-        }
-        #header{
-            position: sticky;
-            top: 0;
-            z-index: 999;
-        }
-        img{
-            /*heightは属性で直接指定済*/
-            float: left;
-            margin-left: 30px;
-        }
-        a{
-            text-decoration : none;
-        }
-        header {
-            height: 50px;
-            width: 100%;
-            padding: 15px 0;
-            background-color: #fff;
-            color: #000;
-        }
-        header .headline{
-            line-height: 50px;
-            float: left;
-            font-size: 30px;
-            margin-left: 100px;
-        }
-        .nav-list {
-            line-height: 50px;
-            float: right;
-            margin-left: 30px;
-            margin-right: 30px;
-            list-style: none;
-        }
-        .nav-list a{
-            color: #000;
-        }
-        .nav-list-item {
-            list-style: none;
-            display: inline-block;
-            margin: 0 20px;
-        }
-
-        body{
-            font-family: 'Montserrat', sans-serif;
-        }
-        /*カレント表示*/
-        .header-is-current{
-            color: #EB0028 !important;
-        }
-
-        @media screen and (max-width: 600px) {
-            .nav-list{
-                display: none;
-            }
-            img{
-                margin-left: 10px;
-            }
-        }
-    </style>
 </html>

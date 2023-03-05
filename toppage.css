@@ -8,7 +8,7 @@ a{
 
 .is-layer-dot {
     position: relative;
-    height: 500px;
+    height: 600px;
 }
 .is-layer-dot::after {
     position: absolute;

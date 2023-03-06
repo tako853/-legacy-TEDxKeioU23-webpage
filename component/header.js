@@ -3,10 +3,6 @@ $(".openbtn1").click(function () {//ボタンがクリックされたら
     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
     $(".circle-bg").toggleClass('circleactive');//丸背景にcircleactiveクラスを付与
 });
-
-$('.openbtn1').on('click', () => {
-    $('#event-header').hide();
-});
   
 $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し

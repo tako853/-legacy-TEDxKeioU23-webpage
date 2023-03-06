@@ -1,7 +1,7 @@
 * {
     margin:0; padding:0;
 }
-#header{
+#header-wrapper{
     position: sticky;
     top: 0;
     z-index: 99;

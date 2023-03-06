@@ -21,15 +21,17 @@
         */
 
         // ページの読み込み完了時にローディング画面をフェードアウト
-        $(window).on("load", function () {
-            $(".loading").delay(0).fadeOut(500); // 画像をフェードアウト
+        $(window).on("load", loadfadeout());
+        function loadfadeout() {
+            $(".animation").delay(0).fadeOut(500); // 画像をフェードアウト
+            $(".loading").delay(500).fadeOut(500); // 画像をフェードアウト
             console.log("ready!");
-        });
-        // ページの読み込みが完了しなくても3秒経ったら強制的にローディング画面をフェードアウト
+        }
+        // ページの読み込みが完了しなくても2秒経ったら強制的にローディング画面をフェードアウト
         setTimeout("stoploading()", 2000);
         function stoploading() {
-        console.log("timeout!");
-        $(".loading").fadeOut(500);
+            console.log("timeout!");
+            loadfadeout();
         }
     </script>
     <style>

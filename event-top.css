@@ -5,7 +5,7 @@
     object-fit: cover;
 }
 .event-thmbnail{
-    height: calc(100vh - (80px + 124px));
+    height: calc(100vh - (70px + 105px));
     overflow: hidden;
 }
 .event-title{

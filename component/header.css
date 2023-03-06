@@ -33,6 +33,7 @@ header .headline{
     line-height: 50px;
     float: right;
     list-style: none;
+    margin-right: 20px;
 }
 .nav-list a{
     color: #000;

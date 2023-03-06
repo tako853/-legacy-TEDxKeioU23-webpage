@@ -44,20 +44,25 @@ a{
     text-align: right;
     color: #ffffff;
     margin-left: 30px;
-    width: calc(100% - 60px) ;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
 }
 .top-thmbnail-titlecontainer svg{
     fill: #fff;
     height: 50px;
     width: auto;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
 }
 .top-thmbnail-titlecontainer h1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-left: 50px;
     font-size: min(15vw,100px);
     font-family: 'Libre Baskerville', serif;
-    margin-left: calc(50px + 30px);
+
 }
 .top-thmbnail-titlecontainer h2{
     font-size: min(5vw,30px);
@@ -316,7 +321,6 @@ a{
 }
 @media screen and (max-width:600px) {
     .top-thmbnail-titlecontainer svg{
-        display: none;
     }
     .top-thmbnail-titlecontainer h1{
         margin: 0;

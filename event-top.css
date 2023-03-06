@@ -10,7 +10,7 @@
 }
 .event-title{
     position: absolute;
-    bottom: 180px;
+    bottom: calc(50vh - (70px + 105px));
     right: 30px;
     margin-left: 30px;
     font-size: 100px;

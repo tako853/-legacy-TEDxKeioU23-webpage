@@ -165,8 +165,8 @@ body{
     text-align: right; 
     list-style: none;
 }
-#g-nav li .link{
-    text-decoration: underline;
+#g-nav li .unlink{
+    opacity: 0.3;
 }
 
 #g-nav li a{

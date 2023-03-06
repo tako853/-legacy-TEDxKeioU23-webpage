@@ -23,8 +23,8 @@ body{
 }
 .event-nav-list-title{
   background-color: #161a20;
-  padding: 20px 0px 20px 0;
   width: 100%;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@ body{
   display: flex;
 }
 .event-nav-list-item{
-  height: 60px;
+  height: 50px;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -50,10 +50,12 @@ body{
 .event-nav-link:hover{
   background-color: #EB0028;
   transition: all 0.3s ease;
-} 
+}
+/*
 .event-nav-link:hover > .event-nav-list-item{
   border-bottom: rgb(255, 255, 255,0.3) 5px solid;
 }
+*/
 
 /*カレント表示*/
 .is-current{
@@ -67,7 +69,12 @@ body{
   .event-nav-link{
     font-size:min(4vw,16px);
   }
+  .event-nav-itemwrapper{
+  }
   .event-nav-list-item{
+    width: initial;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 

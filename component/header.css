@@ -43,6 +43,14 @@ header .headline{
     display: inline-block;
     margin-left: 20px;
 }
+.socials svg{
+    float: right;
+    height: 20px;
+    width: auto;
+    fill: #1B2128;
+    margin: 15px;
+}
+
 
 .mobile-menu{
     height: 80px;
@@ -69,10 +77,17 @@ body{
     .mobile-menu{
         display: flex;
     }
+    .socials{
+        margin-right: 60px;
+    }
 }
 
 
-/* モバイル用 */
+
+
+
+
+/* ------------------------ モバイル用 ------------------------ */
 /*========= ナビゲーションのためのCSS ===============*/
 /*アクティブになったエリア*/
 #g-nav{
@@ -217,7 +232,8 @@ body{
     top: 18px;
     left: 18px;
     transform: translateY(6px) rotate(-45deg);
-    width: 30%;
+    width: 45%;
+    background-color: #fff;
 }
 
 .openbtn1.active span:nth-of-type(2) {
@@ -228,5 +244,7 @@ body{
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
-    width: 30%;
+    width: 45%;
+    background-color: #fff;
 }
+

@@ -8,7 +8,7 @@
 }
 
 img{
-    /*heightは属性で直接指定済*/
+    /*heightは属性で直接指定*/
     float: left;
 }
 a{
@@ -45,8 +45,7 @@ header .headline{
 }
 .socials svg{
     float: right;
-    height: 20px;
-    width: auto;
+    /*heightは属性で直接指定*/
     fill: #1B2128;
     margin: 15px;
 }

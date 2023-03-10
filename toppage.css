@@ -26,7 +26,7 @@ p{
 
 .top-thmbnail{
     position: relative;
-    margin-left: 10vw;
+    margin-left: 50px;
     max-height: 70vh;
     overflow: hidden;
     border-radius: 30px 0 0 30px;
@@ -38,9 +38,11 @@ p{
     object-fit: cover;
 }
 .top-thmbnail:hover{
-    box-shadow:  -10px 10px 30px #9e9e9e, 10px -10px 30px #ffffff;
     transition: all 0.3s ease;
-    transform:scale(1.01,1.01);
+    box-shadow:  -10px 10px 30px #9e9e9e, 10px -10px 30px #ffffff;
+    /*transform:scale(1.005,1.005);*/
+}
+.top-thmbnail video:hover{
 }
 
 .top-thmbnail-titlecontainer{
@@ -78,6 +80,10 @@ p{
 .news-column-wrapper{
     display: flex;
     justify-content: center;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .column{
     margin: 30px;
@@ -85,16 +91,50 @@ p{
     display: flex;
     overflow: hidden;
 }
-.news{
+.news-column{
+    margin: 0px;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
     flex-direction: column;
     background-color: #f1f1f1;
     max-width: 1200px;
     width: 100%;
 }
-.column-title{
-    padding-left: 30px;
-    padding-top: 20px;
+.column-title h1{
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.more-button{
+    border: 3px #EB0028 solid;
+    background-color: #EB0028;
+    color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    width: 150px;
+    position: relative;
+    fill: #fff;
+    float: right;
+    margin: 10px;
+}
+.more-button-contnet{
+    height: 50px;
     display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.more-button svg{
+    position: absolute;
+    height: 30px;
+    width: auto;
+    right: 15px;
+    top:10px
+}
+.more-button:hover{
+    background-color: #fff;
+    color: #EB0028;
+    fill: #EB0028;
 }
 
 .newsfeed-content p{
@@ -139,8 +179,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30vw;
     justify-content: start;
+    width: calc(50vw - 40px);
 }
 .map-content-container h1{
     font-family: 'Libre Baskerville', serif;
@@ -153,7 +193,7 @@ p{
     height:500px; 
     border-radius: 0 30px 30px 0 ;
     overflow: hidden;
-    width: 70vw;
+    width: 50vw;
 }
 
 .contact{
@@ -179,34 +219,7 @@ p{
     margin: 0;
 }
 
-.more-button{
-    border: 3px #EB0028 solid;
-    background-color: #EB0028;
-    color: #fff;
-    border-radius: 30px;
-    height: 50px;
-    width: 200px;
-    position: relative;
-    fill: #fff;
-}
-.more-button-contnet{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-}
-.more-button svg{
-    position: absolute;
-    height: 30px;
-    width: auto;
-    right: 15px;
-    top:10px
-}
-.more-button:hover{
-    background-color: #fff;
-    color: #EB0028;
-    fill: #EB0028;
-}
+
 
 
 /* 011 */
@@ -330,5 +343,8 @@ p{
     }
     .top-thmbnail-titlecontainer h1{
         margin: 0;
+    }
+    .top-thmbnail{
+        margin-left: 30px;
     }
 }

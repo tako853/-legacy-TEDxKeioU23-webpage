@@ -36,7 +36,7 @@ header .headline{
     margin-right: 20px;
 }
 .nav-list a{
-    color: #000;
+    color: #1b212852;
 }
 .nav-list-item {
     list-style: none;
@@ -66,7 +66,7 @@ body{
 }
 /*カレント表示*/
 .header-is-current{
-    color: #EB0028 !important;
+    color: #1B2128 !important;
 }
 
 @media screen and (max-width: 600px) {

@@ -21,7 +21,7 @@ p{
     background-image: radial-gradient(#000000 20%, transparent 0), radial-gradient(#000 20%, transparent 0);
     background-position: 0 0, 10px 10px;
     background-size: 5px 5px;
-    border-radius: 30px 0 0 30px;
+    /*border-radius: 30px 0 0 30px;*/
 }
 
 .top-thmbnail{
@@ -145,8 +145,8 @@ p{
 .about-all{
     margin-top: 150px;
     margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
 }
@@ -157,14 +157,14 @@ p{
 .about-all img{
     width: 400px;
     height: auto;
-    margin-right: 100px;
+    margin:0 auto;
 }
 .about-all h1{
     font-family: 'Libre Baskerville', serif;
     font-size: 50px;
 }
 .about-content p{
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .map-column{
@@ -302,6 +302,9 @@ p{
 
 
 @media screen and (max-width:1000px) {
+    .about-content p{
+        margin: 0;
+    }
     .about-innerwrapper{
         flex-direction: column;
         width: 90vw;
@@ -314,8 +317,8 @@ p{
     }
     .about-innerwrapper img{
         max-width: 400px;
-        width: 80vw;
-        margin: 0;
+        width: 100%;
+        margin: 0 auto;
     }
     .map-column{
         flex-direction: column;
